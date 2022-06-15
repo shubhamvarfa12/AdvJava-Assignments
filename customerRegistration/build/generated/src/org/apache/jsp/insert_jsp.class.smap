@@ -1,0 +1,16 @@
+SMAP
+insert_jsp.java
+JSP
+*S JSP
+*F
++ 0 insert.jsp
+insert.jsp
++ 1 menu1.jsp
+menu1.jsp
+*L
+1,8:49
+1#1,20:56
+25,16:81
+40,4:97
+8#0,44:101
+*E

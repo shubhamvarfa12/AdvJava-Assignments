@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/
+              css?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"/>-->   
+        <style>
+            *{font-fmaily: 'Josefin Sans',sans-serif;}
+        </style>
+
+    </head>
+    <body> 
+        <nav class = "blue lighten-1">
+            <div class="nav-wrapper  container ">
+                <a href="#!" class="brand-logo">Customer Registration</a>
+                <ul class="right hide-on-med-and-down">
+                    <li ><a href="login1.html">Home</a></li>
+                    <li class="active"><a href="Registration1.html">Registration</a></li>            
+                </ul>   
+            </div>  
+        </nav>  
+
+        <!--contect form--> 
+        <section>
+            <h2 class="center-align blue-text">Registration</h2>
+            <div class="row">
+                <div class="col m6 l6 offset-l3">
+                    <div class="row">
+                        <form action="regis.jsp" class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="first_name" type="text" class="validate" name="u1">
+                                    <label for="first_name">Enter First Name</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="last_name" type="text" class="validate" name="u2">
+                                    <label for="last_name">Enter Last Name</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="Address" type="text" class="validate" name="u3">
+                                    <label for="Address">Address</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="City" type="text" class="validate" name="u4">
+                                    <label for="City">City</label>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="Zip" type="text" class="validate" name="u5">
+                                    <label for="Zip">Zip</label>
+                                </div>   
+                                <div class="input-field col s6">
+                                    <input id="State" type="text" class="validate" name="u6" data-length="10">
+                                    <label for="State">State</label>
+                                </div>  
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="Country" type="text" class="validate"  name="u7">
+                                    <label for="Country">Country</label>
+                                </div>
+
+                                <div class="input-field col s6">
+                                    <input id="mobile" type="text" class="validate" name="u8" data-length="10">
+                                    <label for="Mobile">Mobile</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="party" type="text" class="validate" name="u" required>
+                                    <label for="partyId">Enter Id</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="password" type="password" class="validate" name="up">
+                                    <label for="password">Password</label>
+                                </div>
+                            </div>
+                            <button class="btn waves-effect waves-light" type="submit" name="action" 
+                                    >Submit
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            $(document).ready(function () {
+                $('.modal').modal();
+                $('input#mobile').characterCounter();
+            });
+        </script>
+    </body>
+</html>
+
+<!--onclick="M.toast({html: 'your form has been submitted'})"-->
