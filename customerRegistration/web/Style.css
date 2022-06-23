@@ -1,0 +1,55 @@
+/*
+body{
+background-image:url(a.jpg);
+background-repeat:no-repeat;
+background-size:100;
+}
+
+#mymenu
+{
+background:rgba(0,0,0,0.4);
+color:white;
+margin-top:2px;
+text-align:left;
+font-size : 20px;
+}
+
+#mymenu ul li
+{
+margin-top:20px;
+display:inline-block;
+padding:12px;
+}*/
+
+table
+{
+background:rgba(0,0,0,0.1);
+margin-top:40px;
+border:2px solid black;
+color:black;
+font-size:18; 
+
+}
+
+/*.B
+{
+width:120px;
+height:40px;
+background:linear-gradient(black,blue);
+color:white;
+}
+
+.B:hover
+{
+width:100px;
+height:30px;
+background:linear-gradient(to right,black,blue);
+border-radius:0px 40px;
+}
+
+a:visibility{
+	color:white;*/
+
+.blue-text {
+
+}
