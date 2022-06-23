@@ -20,6 +20,10 @@
         <servlet-name>update</servlet-name>
         <servlet-class>update</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>myFIlter</servlet-name>
+        <servlet-class>myFIlter</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>Login</servlet-name>
         <url-pattern>/Login</url-pattern>
@@ -40,9 +44,28 @@
         <servlet-name>update</servlet-name>
         <url-pattern>/update</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>myFIlter</servlet-name>
+        <url-pattern>/myFIlter</url-pattern>
+    </servlet-mapping>
     <session-config>
-        <session-timeout>
+       
+         <session-timeout>
             30
         </session-timeout>
     </session-config>
+         
+        <!--<Filter>-->
+        <filter>
+            <filter-name>filter1</filter-name>
+            <filter-class>myFIlter</filter-class>
+        </filter>
+        
+        <filter-mapping>
+            <filter-name>filter1</filter-name>
+            <url-pattern>/Login</url-pattern>
+        </filter-mapping>  
+        
+        
+       
 </web-app>

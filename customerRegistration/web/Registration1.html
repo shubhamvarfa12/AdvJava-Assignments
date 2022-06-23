@@ -14,7 +14,7 @@
         </style>
 
     </head>
-    <body> 
+    <body > 
         <nav class = "blue lighten-1">
             <div class="nav-wrapper  container ">
                 <a href="#!" class="brand-logo">Customer Registration</a>
@@ -26,13 +26,17 @@
         </nav>  
 
         <!--contect form--> 
-        <section>
-            <h2 class="center-align blue-text">Registration</h2>
+        <section style="background: url(image/bg2.jpg); background-size:cover;background-attachment:fixed>  
+            <div class="container">
             <div class="row">
-                <div class="col m6 l6 offset-l3">
-                    <div class="row">
-                        <form action="regis.jsp" class="col s12">
-                            <div class="row">
+                <div class="col m6 offset-m3">
+                    <div class="card">
+                        <div class="card-content">
+<!--                    <div class="row">-->
+                        <h2 class="center-align blue-text">Registration</h2>   
+                        <div class="form">
+                        <form action="regis.jsp" class="col s12" id="myform">
+<!--                            <div class="row">-->
                                 <div class="input-field col s6">
                                     <input id="first_name" type="text" class="validate" name="u1">
                                     <label for="first_name">Enter First Name</label>
@@ -86,15 +90,18 @@
                                     >Submit
                             </button>
                         </form>
+                           </div>
+                        </div>
                     </div>
                 </div>
-            </div>
+                    </div>
+                </div>
         </section>
         <script>
             $(document).ready(function () {
                 $('.modal').modal();
                 $('input#mobile').characterCounter();
-            });
+    });
         </script>
     </body>
 </html>
